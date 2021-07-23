@@ -117,7 +117,7 @@ bot.onText(/\/start/, msg => {
 
 
 // ! отправка воторого сообщения через 30 c
-const time23 = new Date(Date.now() + 30000);
+const time23 = new Date(Date.now() + 20000);
 var j = schedule.scheduleJob(time23, function () {
 
   bot.sendMessage(chatId, `<b>Программа марафона:</b>
@@ -167,13 +167,13 @@ var j = schedule.scheduleJob(time23, function () {
     disable_web_page_preview: false,
     
   });
-
+  console.log('Второе сообщение после приветствия отправлено успешно!');
 });
-console.log('Второе сообщение после приветствия отправлено успешно!');
+
 
 
 // ! отправка третьего сообщения через 60 c
-const time24 = new Date(time23 + 5000);
+const time24 = new Date(time23 + 20000);
 var j = schedule.scheduleJob(time24, function () {
 
   bot.sendMessage(chatId, `<b>Правила прохождения марафона:</b>
@@ -202,9 +202,9 @@ var j = schedule.scheduleJob(time24, function () {
     disable_web_page_preview: false,
     
   });
-
+  console.log('Третье сообщение после приветствия отправлено успешно!');
 });
-console.log('Третье сообщение после приветствия отправлено успешно!');
+
 
 
 
