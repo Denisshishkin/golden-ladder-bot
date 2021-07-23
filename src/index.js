@@ -10,11 +10,6 @@ const helper = require('./helper')
 //const saveUser = require('./messageService')
 const schedule = require("node-schedule")
 
-var port = process.env.PORT || 5000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-
-});
 
 
 helper.logStart()
@@ -44,6 +39,9 @@ helper.logStart()
 const bot = new TelegramBot(config.TOKEN, {
   polling: true
 });
+
+
+var port = process.env.PORT || 5000;
 
 
 // bot.on('message', msg => {
