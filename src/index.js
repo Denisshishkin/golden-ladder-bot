@@ -173,7 +173,7 @@ console.log('Второе сообщение после приветствия �
 
 
 // ! отправка третьего сообщения через 60 c
-const time23 = new Date(Date.now() + 60000);
+const time24 = new Date(Date.now() + 60000);
 var j = schedule.scheduleJob(time23, function () {
 
   bot.sendMessage(chatId, `<b>Правила прохождения марафона:</b>
