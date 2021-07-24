@@ -373,7 +373,7 @@ var messages = [
 let i = 0;
 
 //? В какое время присылать сообщения УТРОМ
-const time = { hour: 11, minutes: 30}
+const time = { hour: 16, minute: 10, second: 10}
 var j = schedule.scheduleJob(time, function () {
   bot.sendMessage(chatId, messages[i], {
     parse_mode: "HTML",
@@ -560,7 +560,7 @@ var messages2 = [
 let e = 0;
 
 // ? В какое время присылать сообщения В ОБЕД
-const time2 = { hour: 12}
+const time2 = { hour: 16, minute: 30, second: 10 }
 var j = schedule.scheduleJob(time2, function () {
   bot.sendMessage(chatId, messages2[e], {
     parse_mode: "HTML",
@@ -721,7 +721,7 @@ var messages3 = [
 let d = 0;
 
 // ? В какое время присылать сообщения ВЕЧЕРОМ
-const time3 = { hour: 12, minutes: 30 }
+const time3 = { hour: 17, minute: 10, second 10 }
 var j = schedule.scheduleJob(time3, function () {
   bot.sendMessage(chatId, messages3[d], {
     parse_mode: "HTML",
